@@ -75,7 +75,6 @@
             <p><strong>Linux and Shell Scripting</strong></p>
             <p><strong>DevOps Concepts:</strong> System Architecture, Introduction to DevOps, SDLC - Concept & Models, Maven, Git, GitHub, Tomcat, Jenkins, Docker, Kubernetes, Terraform, Ansible, SonarQube</p>
             <p><strong>Linux and Shell Scripting</strong></p>
-            <p><strong>PJ file is adding</strong></p>
                 <a href="https://youtube.com/playlist?list=PLs-PsDpuAuTdOcZa-DDgG8KRbtMI_XRrC&si=7qb7yp6si8oeNwDh" target="_blank">
                     <button class="aws-button"><i class="fab fa-aws"></i> AWS FREE Tutorials</button>
                 </a>
