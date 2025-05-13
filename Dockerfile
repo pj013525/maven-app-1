@@ -1,12 +1,13 @@
-# Base Image
-FROM openjdk:17-jdk-slim
-
-# App directory inside container
+# Stage 1: Build
+FROM maven:3.9.6-eclipse-temurin-17 AS build
 WORKDIR /app
+COPY . .
+RUN mvn clean package -DskipTests
 
-# Copy built jar file from host to container
-COPY target/*.jar app.jar
-
-# Command to run the app
+# Stage 2: Run
+FROM eclipse-temurin:17-jdk
+WORKDIR /app
+COPY --from=build /app/target/*.jar app.jar
+EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "app.jar"]
 
